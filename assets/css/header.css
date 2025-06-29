@@ -5,7 +5,7 @@
 
 /* 🌐 Variáveis de cor – mantemos o nome, trocamos apenas o valor */
 :root {
-  --ouro-agroverso: #4da8ff;          /* Novo tom azul‑claro para destaques */
+  --ouro-agroverso: #ffffff;          /* Novo tom azul‑claro para destaques */
   --branco-puro: #ffffff;             /* Branco permanece igual */
 }
 
