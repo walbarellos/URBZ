@@ -1,7 +1,8 @@
 /* ================================================================================
-🌱 base.css – Núcleo Visual do Projeto Agroverso
-🎯 Reset, Tipografia, Tokens Visuais Globais, Acessibilidade e Integração com Dashboards
-================================================================================ */
+ � *� base.css – Núcleo Visual do Projeto URBZ (anteriormente Agroverso)
+ ✳️ Reset, Tipografia, Tokens Visuais, Acessibilidade
+ 📌 Ajustado para garantir contraste nas seções de fundo azul‑escuro
+ ================================================================================ */
 
 /* 🔄 RESET UNIVERSAL */
 *,
@@ -25,8 +26,8 @@ html {
 body {
   font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
   font-size: 1rem;
-  background-color: var(--cor-fundo-claro, #f4f9f6);
-  color: var(--cor-texto, #1e1e1e);
+  background-color: var(--cor-fundo-claro, #f5f8ff);
+  color: var(--cor-texto, #e7eefc);
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -35,7 +36,7 @@ body {
  * 🎨 TOKENS VISUAIS – VARIÁVEIS CSS GLOBAIS (paleta URBZ)
  * Somente valores foram alterados para o esquema azul‑escuro / azul‑claro.
  * Nomes de variáveis e estrutura permanecem intactos.
- * ============================================================================ */
+ = *============================================================================ */
 
 :root {
   /* 🎨 Cores institucionais */
@@ -60,8 +61,6 @@ body {
   /* 🎯 Kanban e dashboards */
   --cor-coluna-kanban: #101f37;          /* Bloco escuro sutil */
   --cor-linha-borda-kanban: #203051;     /* Linha separadora */
-}
-
 
   /* ✨ Sombras */
   --sombra-leve: 0 2px 8px rgba(0, 0, 0, 0.04);
@@ -77,8 +76,8 @@ body {
 }
 
 /* ================================================================================
-🔤 TIPOGRAFIA GLOBAL – Hierarquia e Leitura Suave
-================================================================================ */
+ � *� TIPOGRAFIA GLOBAL – Hierarquia e Leitura Suave
+ ================================================================================ */
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
@@ -100,8 +99,8 @@ p {
 }
 
 /* ================================================================================
-🧩 ELEMENTOS GLOBAIS – Containers, Imagens, Inputs, Placeholder
-================================================================================ */
+ � *� ELEMENTOS GLOBAIS – Containers, Imagens, Inputs, Placeholder
+ ================================================================================ */
 
 .container {
   max-width: 1200px;
@@ -126,8 +125,8 @@ img {
 }
 
 /* ================================================================================
-♿️ ACESSIBILIDADE & NAVEGAÇÃO POR TECLADO
-================================================================================ */
+ ♿ *️ ACESSIBILIDADE & NAVEGAÇÃO POR TECLADO
+ ================================================================================ */
 
 [hidden] {
   display: none !important;
@@ -148,8 +147,8 @@ html:focus-within {
 }
 
 /* ================================================================================
-📱 MOBILE FIRST – Ajustes tipográficos para telas menores
-================================================================================ */
+ � *� MOBILE FIRST – Ajustes tipográficos para telas menores
+ ================================================================================ */
 
 @media (max-width: 768px) {
   html {
@@ -161,11 +160,35 @@ html:focus-within {
   h3 { font-size: 1.3rem; }
 }
 
-/* 🎯 Estilo do botão WhatsApp simulando um <button> */
+/* ================================================================================
+ � *� COMPONENTES ESPECÍFICOS
+ ================================================================================ */
+
+/* Seção CTA: garantir contraste do título e textos sobre fundo escuro */
+.cta {
+  background-color: var(--cor-principal);
+  color: var(--cor-clara);
+  text-align: center;
+  padding: var(--espaco-lg) var(--espaco-sm);
+}
+
+.cta .secao-titulo {
+  color: var(--cor-secundaria); /* azul‑claro destaque */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+  margin-bottom: var(--espaco-sm);
+}
+
+.cta p {
+  color: var(--cor-clara);
+  max-width: 40ch;
+  margin: 0 auto var(--espaco-md);
+}
+
+/* 🎯 Botão WhatsApp – ajustado para a nova paleta */
 .whatsapp-btn {
   display: inline-block;
-  background-color: #1C3D27;
-  color: white;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-clara);
   padding: 1rem 2rem;
   border-radius: 8px;
   font-size: 1rem;
@@ -173,9 +196,26 @@ html:focus-within {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.35));
 }
 
 .whatsapp-btn:hover {
-  background-color: #145f3c;
+  background-color: #3a83d1; /* tom mais escuro */
+  transform: translateY(-2px);
+}
+
+/* Inputs dentro da CTA para manter contraste */
+.cta input,
+.cta select {
+  border: 1px solid var(--cor-borda);
+  background-color: #0f223d;
+  color: var(--cor-clara);
+  padding: var(--espaco-xs) var(--espaco-sm);
+  border-radius: 6px;
+  margin-bottom: var(--espaco-sm);
+}
+
+.cta input::placeholder {
+  color: var(--cor-placeholder);
 }
