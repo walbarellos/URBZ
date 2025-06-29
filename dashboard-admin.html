@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- =========================================================================================
+  👑 dashboard-admin.html – Painel do Administrador Geral • Agroverso
+  🌱 Visão macro, gestão sistêmica e liderança regenerativa em alto nível
+  ========================================================================================== -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>Dashboard Administrativo • Agroverso</title>
+  <meta name="description" content="Painel de controle do Administrador Geral do sistema Agroverso com visão global e gestão avançada." />
+  <meta name="author" content="Instituto Graciliana Maria da Conceição" />
+  <meta name="theme-color" content="#1C3D27" />
+
+  <!-- 🎨 Estilos principais -->
+  <link rel="stylesheet" href="assets/css/dashboard.css" />
+  <link rel="stylesheet" href="assets/css/kanban.css" />
+  <link rel="stylesheet" href="assets/css/header.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+</head>
+
+<body class="dashboard-body" data-perfil="administrador">
+  <!-- ✅ Cabeçalho institucional do Agroverso -->
+  <div data-include="partials/header-dashboard.html"></div>
+
+  <!-- 🧩 Conteúdo principal -->
+  <main class="dashboard-container" role="main" aria-label="Painel administrativo do Agroverso">
+    <section class="dashboard-box" aria-labelledby="painel-titulo">
+
+      <h2 id="painel-titulo" class="dashboard-titulo">Painel de Tarefas – Visão Geral (Administrador)</h2>
+
+      <!-- ✅ Painel Kanban -->
+      <section class="kanban-board" aria-label="Painel Kanban de Tarefas">
+        <div class="kanban-column" data-status="a-fazer">
+          <h3>A Fazer</h3>
+          <div class="kanban-items" id="a-fazer"></div>
+        </div>
+
+        <div class="kanban-column" data-status="em-execucao">
+          <h3>Em Execução</h3>
+          <div class="kanban-items" id="em-execucao"></div>
+        </div>
+
+        <div class="kanban-column" data-status="concluidas">
+          <h3>Concluídas</h3>
+          <div class="kanban-items" id="concluidas"></div>
+        </div>
+
+        <div class="kanban-column" data-status="pendencias">
+          <h3>Pendências</h3>
+          <div class="kanban-items" id="pendencias"></div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <!-- ✅ Rodapé institucional -->
+  <div data-include="partials/footer.html"></div>
+
+  <!-- 🔁 Scripts institucionais e funcionais -->
+  <script src="scripts/includes.js" defer></script>
+  <script src="scripts/kanban.js" defer></script>
+  <script src="scripts/auth.js" defer></script>
+  <script src="scripts/logout.js" defer></script>
+</body>
+</html>
