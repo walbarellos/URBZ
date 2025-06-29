@@ -1,131 +1,123 @@
+<!-- =====================================================================================
+🧑‍💼 usuarios.html – Página Protegida: Visualização de Usuários • Agroverso
+🔐 Acesso restrito aos perfis: Administrador Geral e Gerente
+🎯 Refinado com sabedoria, força e beleza
+===================================================================================== -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <!-- ✅ Codificação & Responsividade -->
+  <!-- 🌐 Metadados Essenciais -->
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- 🎯 SEO e Identidade Visual Estratégica -->
-  <title>URBZ • Criptomoeda de Impacto</title>
-  <meta name="description" content="Conheça a URBZ, a criptomoeda que conecta inovação, sustentabilidade e comunidades digitais. Aprenda, participe e expanda seu universo cripto." />
-  <meta name="keywords" content="urbz, criptomoeda, blockchain, staking, defi, web3" />
-  <meta name="author" content="Eco URBZ Labs" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://urbz.io" />
+  <!-- 📑 SEO e Identidade -->
+  <title>Usuários Vinculados • Agroverso</title>
+  <meta name="description" content="Página protegida de gerenciamento dos usuários vinculados ao sistema Agroverso. Acesso exclusivo para Administradores e Gerentes." />
+  <meta name="author" content="Instituto Graciliana Maria da Conceição" />
+  <meta name="robots" content="noindex, nofollow" />
 
-  <!-- 🌍 Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="URBZ • Criptomoeda de Impacto" />
-  <meta property="og:description" content="Descubra o ecossistema URBZ, participe de staking e explore nosso whitepaper." />
-  <meta property="og:image" content="https://urbz.io/assets/images/social-preview.jpg" />
-  <meta property="og:url" content="https://urbz.io/" />
+  <!-- 🎨 Estilo Institucional -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
 
-  <!-- 🐦 Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="URBZ • Criptomoeda de Impacto" />
-  <meta name="twitter:description" content="Participe do futuro sustentável da blockchain com URBZ." />
-  <meta name="twitter:image" content="https://urbz.io/assets/images/social-preview.jpg" />
-
-  <!-- 🖼️ Favicon e Manifest -->
-  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
-  <link rel="manifest" href="manifest.json" />
-  <meta name="theme-color" content="#111B2B" />
-  <meta name="color-scheme" content="light dark" />
-
-  <!-- 🎨 Estilos Modulares (mantidos) -->
-  <link rel="stylesheet" href="assets/css/base.css" />
-  <link rel="stylesheet" href="assets/css/layout.css" />
-  <link rel="stylesheet" href="assets/css/home.css" />
-  <link rel="stylesheet" href="assets/css/carrossel.css" />
-  <link rel="stylesheet" href="assets/css/responsivo.css" />
-  <link rel="stylesheet" href="menu-lateral.css" />
-  <link rel="stylesheet" href="assets/css/header.css" />
-  <link rel="stylesheet" href="assets/css/footer.css" />
+  <!-- 🔐 Segurança de acesso -->
+  <script src="scripts/auth.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      protegerPagina(["administrador", "gerente"]);
+    });
+  </script>
 </head>
 
-<body>
-  <!-- ⬆️ Cabeçalho institucional -->
-  <div data-include="partials/header.html"></div>
+<body class="pagina-protegida">
+  <!-- ⬆️ Cabeçalho institucional fixo -->
+  <header class="header-principal">
+    <nav class="navegacao-principal">
+      <ul class="nav-menu">
+        <li><a href="index.html">🏠 Início</a></li>
+        <li><a href="dashboard.html">📊 Painel</a></li>
+        <li><a href="usuarios.html" class="ativo">👥 Usuários</a></li>
+        <li><button class="btn-secundario" onclick="logout()">🚪 Sair</button></li>
+      </ul>
+    </nav>
+  </header>
 
-<!-- 🔄 Início do conteúdo principal -->
-<main>
-  <!-- 🎓 Conteúdos URBZ -->
-  <section class="produtos" aria-labelledby="titulo-conteudos">
-    <h2 id="titulo-conteudos" class="secao-titulo">Aprenda & Construa no Ecossistema URBZ</h2>
+  <!-- 🎯 Conteúdo protegido -->
+  <main class="conteudo-principal" role="main" aria-label="Painel de usuários">
+    <section class="bloco-destaque">
+      <h1 class="titulo-secao">Usuários Vinculados ao Sistema</h1>
+      <p class="texto-suporte">
+        Abaixo estão listados os usuários vinculados à plataforma Agroverso. A exibição completa depende do seu nível de permissão.
+      </p>
 
-    <div class="cards-container">
-      <a href="produto-irrigacao.html" class="card" aria-label="Guia Inicial URBZ">
-        <img src="assets/images/Produto1.jpg" alt="Guia Inicial URBZ" loading="lazy" />
-        <h3>URBZ: Guia Inicial</h3>
-        <p>Entenda o propósito da URBZ, leia o whitepaper e descubra como participar da rede.</p>
-      </a>
+      <div class="tabela-container">
+        <!-- 🧾 Tabela simulada -->
+        <table class="tabela-usuarios" aria-label="Lista de usuários vinculados">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Email</th>
+              <th>Perfil</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ana Souza</td>
+              <td>ana@agroverso.tec.br</td>
+              <td>Gerente</td>
+              <td>✅ Ativo</td>
+            </tr>
+            <tr>
+              <td>João Lima</td>
+              <td>joao@agroverso.tec.br</td>
+              <td>Técnico</td>
+              <td>⏳ Pendente</td>
+            </tr>
+            <tr>
+              <td>Marina Dias</td>
+              <td>marina@agroverso.tec.br</td>
+              <td>Administrador</td>
+              <td>✅ Ativo</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
 
-      <a href="produto-hidroponia.html" class="card" aria-label="Staking URBZ">
-        <img src="assets/images/Produto2.jpg" alt="Staking URBZ" loading="lazy" />
-        <h3>Staking URBZ</h3>
-        <p>Aprenda passo a passo a delegar seus tokens URBZ e ganhar recompensas de forma segura.</p>
-      </a>
-
-      <a href="produto-energia.html" class="card" aria-label="Ferramentas DeFi URBZ">
-        <img src="assets/images/Produto3.jpg" alt="Ferramentas DeFi URBZ" loading="lazy" />
-        <h3>URBZ & DeFi</h3>
-        <p>Explore integrações DeFi, pools de liquidez e oportunidades de rendimento dentro do ecossistema URBZ.</p>
-      </a>
-    </div>
+  <!-- 📢 Mensagem de acessibilidade em caso de erro -->
+  <section id="mensagem-acesso" class="mensagem-acesso" role="alert" aria-live="assertive" hidden>
+    <p>Você não tem permissão para acessar esta página. Redirecionando para login...</p>
   </section>
 
-  <!-- 💬 Formulário de Contato -->
-  <section class="cta" aria-labelledby="titulo-cta">
-    <h2 id="titulo-cta" class="secao-titulo">Vamos conversar?</h2>
-    <p class="cta-texto">
-      Entre em contato direto ou peça orientações personalizadas sobre URBZ.
-    </p>
+  <!-- 🔒 Inclusão de script adicional para foco e acessibilidade -->
+  <script>
+    // 🔁 Feedback automático para leitores de tela
+    if (!sessionStorage.getItem("usuario_perfil")) {
+      const alerta = document.getElementById("mensagem-acesso");
+      if (alerta) {
+        alerta.hidden = false;
+        alerta.focus?.();
+      }
+    }
 
-    <a class="whatsapp-btn"
-       href="https://wa.me/5511963372373?text=Olá! Quero saber mais sobre a URBZ."
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="Fale agora via WhatsApp sobre URBZ">
-      📲 Fale agora via WhatsApp
-    </a>
+    // 🎯 Foco inicial no título principal ao carregar
+    window.onload = () => {
+      document.querySelector("h1")?.focus?.();
+    };
+  </script>
 
-    <p class="form-intro">
-      Prefere e‑mail? Envie seus dados abaixo e retornaremos em breve:
-    </p>
-
-    <form id="orcamento-form"
-          class="formulario-orcamento"
-          aria-label="Formulário de contato URBZ"
-          autocomplete="on"
-          novalidate>
-
-      <label for="nome">Nome completo:</label>
-      <input type="text" id="nome" name="nome" placeholder="Seu nome" required autocomplete="name" />
-
-      <label for="email">E-mail de contato:</label>
-      <input type="email" id="email" name="email" placeholder="seu@email.com" required autocomplete="email" />
-
-      <label for="produto">Assunto de interesse:</label>
-      <select id="produto" name="produto" required>
-        <option value="">Selecione uma opção</option>
-        <option value="whitepaper">Whitepaper URBZ</option>
-        <option value="staking">Staking URBZ</option>
-        <option value="defi">URBZ & DeFi</option>
-      </select>
-
-      <!-- Botão WhatsApp mantido para consistência -->
-      <a href="https://wa.me/5511963372373?text=Olá! Quero saber mais sobre a URBZ." class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Solicitar informações via WhatsApp">Solicitar Informações</a>
-    </form>
-  </section>
-</main>
-
-<!-- 🧭 Rodapé Institucional -->
-<div data-include="footer"></div>
-
-<!-- 🧠 Scripts Essenciais (inalterados) -->
-<script src="scripts/includes.js" defer></script>
-<script src="scripts/menuLateral.js" defer></script>
-<script src="scripts/footer-loader.js" defer></script>
+  <!-- ⬇️ Rodapé institucional -->
+  <footer class="rodape-institucional" role="contentinfo">
+    <section class="rodape-bloco">
+      <p><strong>Agroverso</strong> – Tecnologia para a regeneração da terra e do saber.</p>
+      <p>© 2025 Instituto Graciliana Maria da Conceição – Todos os direitos reservados.</p>
+      <p class="contato-suporte">
+        Suporte técnico: <a href="mailto:suporte@agroverso.tec.br">suporte@agroverso.tec.br</a> · WhatsApp: <a href="https://wa.me/5511963372373" target="_blank" rel="noopener noreferrer">+55 11 9 6337-2373</a>
+      </p>
+    </section>
+  </footer>
 </body>
 </html>
