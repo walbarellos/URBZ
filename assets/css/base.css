@@ -31,33 +31,37 @@ body {
   overflow-x: hidden;
 }
 
-/* ================================================================================
-🎨 TOKENS VISUAIS – VARIÁVEIS CSS GLOBAIS
-================================================================================ */
+/* =============================================================================
+ * 🎨 TOKENS VISUAIS – VARIÁVEIS CSS GLOBAIS (paleta URBZ)
+ * Somente valores foram alterados para o esquema azul‑escuro / azul‑claro.
+ * Nomes de variáveis e estrutura permanecem intactos.
+ * ============================================================================ */
 
 :root {
   /* 🎨 Cores institucionais */
-  --cor-principal: #004225;
-  --cor-secundaria: #25d366;
-  --cor-destaque: #b2f5e2;
+  --cor-principal: #0d1e3c;   /* Azul‑marinho profundo */
+  --cor-secundaria: #4da8ff; /* Azul‑claro vivo (destaque) */
+  --cor-destaque: #d9e6ff;   /* Azul‑gelo suave */
 
-  --cor-clara: #ffffff;
-  --cor-media: #f4f9f6;
-  --cor-escura: #1c1c1c;
+  --cor-clara: #ffffff;       /* Branco puro */
+  --cor-media: #11274a;       /* Azul‑escuro médio */
+  --cor-escura: #06111f;      /* Quase preto azulado */
 
-  --cor-texto: #1e1e1e;
-  --cor-fundo-claro: #f4f9f6;
-  --cor-sucesso: #1da851;
-  --cor-erro: #b91c1c;
-  --cor-alerta: #e53935;
-  --cor-info: #4d7c0f;
+  --cor-texto: #e7eefc;       /* Texto claro sobre fundo escuro */
+  --cor-fundo-claro: #f5f8ff; /* Fundo claro ligeiramente azulado */
+  --cor-sucesso: #1da851;     /* Mantido (verde) */
+  --cor-erro: #b91c1c;        /* Mantido (vermelho) */
+  --cor-alerta: #e53935;      /* Mantido (alarme) */
+  --cor-info: #4da8ff;        /* Azul‑claro para infos */
 
-  --cor-borda: #cbd5cb;
-  --cor-placeholder: #888888;
+  --cor-borda: #2d3c56;       /* Borda azul‑acinzentada */
+  --cor-placeholder: #6d7a99; /* Cinza‑azulado */
 
   /* 🎯 Kanban e dashboards */
-  --cor-coluna-kanban: #f9f9f9;
-  --cor-linha-borda-kanban: #cfd8dc;
+  --cor-coluna-kanban: #101f37;          /* Bloco escuro sutil */
+  --cor-linha-borda-kanban: #203051;     /* Linha separadora */
+}
+
 
   /* ✨ Sombras */
   --sombra-leve: 0 2px 8px rgba(0, 0, 0, 0.04);

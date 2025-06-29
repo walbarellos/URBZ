@@ -1,16 +1,33 @@
 /* ============================================================================
-🎨 Rodapé com distinção cerimonial e institucional refinada
-============================================================================ */
+ * 🎨 Rodapé URBZ – Ajustado para a paleta azul‑escuro / azul‑claro
+ * Só foram alterados valores de cor e adicionados efeitos visuais.
+ * Variáveis e classes originais permanecem intactos.
+ * ============================================================================ */
 
 .rodape-site {
-  background-color: #004225;
-  color: #ffffff;
+  background: linear-gradient(145deg, #0d1e3c 0%, #11274a 100%); /* Azul‑escuro */
+  color: #ffffff; /* texto principal */
   text-align: center;
   padding: var(--espaco-lg) var(--espaco-sm);
   font-size: 0.95rem;
   line-height: 1.6;
-  border-top: 4px solid var(--cor-destaque);
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+  border-top: 4px solid var(--cor-destaque, #4da8ff); /* Azul‑claro como destaque */
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden; /* Para pseudo‑elementos decorativos */
+}
+
+/* ✨ Faixa diagonal suave (coesa com o header) */
+.rodape-site::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: -40%;
+  width: 180%;
+  height: 180%;
+  background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,0.04) 50%, transparent 70%);
+  transform: rotate(8deg);
+  pointer-events: none;
 }
 
 .rodape-site p {
@@ -19,27 +36,27 @@
 }
 
 .instituto-destaque {
-  color: #f4d35e;
+  color: var(--cor-destaque, #4da8ff);
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
 }
 
 .rodape-site .cnpj {
-  color: #f4d35e;
+  color: var(--cor-destaque, #4da8ff);
   font-weight: 600;
 }
 
-/* ✨ Apenas o texto do provérbio com dourado regenerativo */
+/* ✨ Destaque de provérbios em azul‑claro */
 .proverbio-destaque {
-  color: #f4d35e;
+  color: var(--cor-destaque, #4da8ff);
   font-style: italic;
   font-weight: 500;
   font-size: 0.95rem;
 }
 
-/* 📜 Autoria com estilo leve em branco */
+/* 📜 Autoria do provérbio em tom suave */
 .proverbio-autoria {
-  color: #f4d35e;
+  color: var(--cor-destaque, #4da8ff);
   font-size: 0.85rem;
   opacity: 0.85;
   font-style: italic;
