@@ -87,14 +87,13 @@
  * 🌐 Variáveis Globais – Paleta URBZ (azul‑escuro / azul‑claro)
  * Somente valores foram alterados; nomes das variáveis permanecem.
  * ============================================================================ */
-
 :root {
   /* 🎨 Paleta de Cores Institucionais */
   --cor-principal: #0d1e3c;   /* Azul‑marinho profundo URBZ */
   --cor-clara: #ffffff;       /* Branco puro */
   --cor-destaque: #d9e6ff;    /* Azul‑gelo suave para realces */
   --cor-secundaria: #4da8ff;  /* Azul‑claro vivo (destaque principal) */
-  --cor-suave: #eaf2ff;       /* Azul muito claro para fundos suaves */
+  --cor-suave: #ffffff;       /* Azul muito claro para fundos suaves */
 
   /* 📏 Espaçamentos Padrão (inalterados) */
   --espaco-xs: 0.25rem;
