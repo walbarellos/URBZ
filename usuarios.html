@@ -1,123 +1,132 @@
-<!-- =====================================================================================
-🧑‍💼 usuarios.html – Página Protegida: Visualização de Usuários • Agroverso
-🔐 Acesso restrito aos perfis: Administrador Geral e Gerente
-🎯 Refinado com sabedoria, força e beleza
-===================================================================================== -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <!-- 🌐 Metadados Essenciais -->
+  <!-- ✅ Codificação & Responsividade -->
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- 📑 SEO e Identidade -->
-  <title>Usuários Vinculados • Agroverso</title>
-  <meta name="description" content="Página protegida de gerenciamento dos usuários vinculados ao sistema Agroverso. Acesso exclusivo para Administradores e Gerentes." />
-  <meta name="author" content="Instituto Graciliana Maria da Conceição" />
-  <meta name="robots" content="noindex, nofollow" />
+  <!-- 🎯 SEO e Identidade Visual Estratégica -->
+  <title>CryptoVerso – Inteligência Financeira Descentralizada</title>
+  <meta name="description" content="Plataforma de aprendizado em blockchain, criptomoedas, DeFi e Web3. Conecte‑se ao futuro das finanças." />
+  <meta name="keywords" content="crypto, criptomoedas, blockchain, bitcoin, defi, nft, trading, cryptoverso" />
+  <meta name="author" content="Instituto CryptoVerso" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://cryptoverso.io" />
 
-  <!-- 🎨 Estilo Institucional -->
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+  <!-- 🌍 Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="CryptoVerso • Inteligência Financeira Descentralizada" />
+  <meta property="og:description" content="Cursos e soluções inteligentes em blockchain, DeFi e trading de criptomoedas." />
+  <meta property="og:image" content="https://cryptoverso.io/assets/images/social-preview.jpg" />
+  <meta property="og:url" content="https://cryptoverso.io/" />
 
-  <!-- 🔐 Segurança de acesso -->
-  <script src="scripts/auth.js" defer></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      protegerPagina(["administrador", "gerente"]);
-    });
-  </script>
+  <!-- 🐦 Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CryptoVerso • Inteligência Financeira Descentralizada" />
+  <meta name="twitter:description" content="Domine o universo cripto com segurança e inovação." />
+  <meta name="twitter:image" content="https://cryptoverso.io/assets/images/social-preview.jpg" />
+
+  <!-- 🖼️ Favicon e Manifest -->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#001F36" />
+  <meta name="color-scheme" content="light dark" />
+
+  <!-- 🎨 Estilos Modulares do CryptoVerso -->
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/home.css" />
+  <link rel="stylesheet" href="assets/css/carrossel.css" />
+  <link rel="stylesheet" href="assets/css/responsivo.css" />
+  <link rel="stylesheet" href="menu-lateral.css" />
+  <link rel="stylesheet" href="assets/css/header.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
 </head>
 
-<body class="pagina-protegida">
-  <!-- ⬆️ Cabeçalho institucional fixo -->
-  <header class="header-principal">
-    <nav class="navegacao-principal">
-      <ul class="nav-menu">
-        <li><a href="index.html">🏠 Início</a></li>
-        <li><a href="dashboard.html">📊 Painel</a></li>
-        <li><a href="usuarios.html" class="ativo">👥 Usuários</a></li>
-        <li><button class="btn-secundario" onclick="logout()">🚪 Sair</button></li>
-      </ul>
-    </nav>
-  </header>
+<body>
+  <!-- ⬆️ Cabeçalho institucional -->
+  <div data-include="partials/header.html"></div>
 
-  <!-- 🎯 Conteúdo protegido -->
-  <main class="conteudo-principal" role="main" aria-label="Painel de usuários">
-    <section class="bloco-destaque">
-      <h1 class="titulo-secao">Usuários Vinculados ao Sistema</h1>
-      <p class="texto-suporte">
-        Abaixo estão listados os usuários vinculados à plataforma Agroverso. A exibição completa depende do seu nível de permissão.
-      </p>
+<!-- 🔄 Início do conteúdo principal -->
+<main>
+  <!-- 🎓 Cursos Inteligentes CryptoVerso -->
+  <section class="produtos" aria-labelledby="titulo-cursos">
+    <h2 id="titulo-cursos" class="secao-titulo">Cursos Inteligentes CryptoVerso</h2>
 
-      <div class="tabela-container">
-        <!-- 🧾 Tabela simulada -->
-        <table class="tabela-usuarios" aria-label="Lista de usuários vinculados">
-          <thead>
-            <tr>
-              <th>Nome</th>
-              <th>Email</th>
-              <th>Perfil</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Ana Souza</td>
-              <td>ana@agroverso.tec.br</td>
-              <td>Gerente</td>
-              <td>✅ Ativo</td>
-            </tr>
-            <tr>
-              <td>João Lima</td>
-              <td>joao@agroverso.tec.br</td>
-              <td>Técnico</td>
-              <td>⏳ Pendente</td>
-            </tr>
-            <tr>
-              <td>Marina Dias</td>
-              <td>marina@agroverso.tec.br</td>
-              <td>Administrador</td>
-              <td>✅ Ativo</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-  </main>
+    <div class="cards-container">
+      <a href="curso-bitcoin.html" class="card" aria-label="Curso Fundamentos do Bitcoin & Blockchain">
+        <img src="assets/images/CursoBitcoin.jpg" alt="Curso Fundamentos do Bitcoin" loading="lazy" />
+        <h3>Fundamentos do Bitcoin</h3>
+        <p>Entenda como funciona o Bitcoin, a tecnologia blockchain e os princípios de segurança descentralizada.</p>
+      </a>
 
-  <!-- 📢 Mensagem de acessibilidade em caso de erro -->
-  <section id="mensagem-acesso" class="mensagem-acesso" role="alert" aria-live="assertive" hidden>
-    <p>Você não tem permissão para acessar esta página. Redirecionando para login...</p>
+      <a href="curso-defi.html" class="card" aria-label="Curso DeFi Essentials">
+        <img src="assets/images/CursoDeFi.jpg" alt="Curso DeFi Essentials" loading="lazy" />
+        <h3>DeFi Essentials</h3>
+        <p>Explore protocolos de finanças descentralizadas, pools de liquidez e estratégias de yield farming.</p>
+      </a>
+
+      <a href="curso-nft.html" class="card" aria-label="Curso NFTs & Web3">
+        <img src="assets/images/CursoNFT.jpg" alt="Curso NFTs & Web3" loading="lazy" />
+        <h3>NFTs & Web3</h3>
+        <p>Aprenda a criar, negociar e integrar NFTs em aplicações Web3, games e metaverso.</p>
+      </a>
+    </div>
   </section>
 
-  <!-- 🔒 Inclusão de script adicional para foco e acessibilidade -->
-  <script>
-    // 🔁 Feedback automático para leitores de tela
-    if (!sessionStorage.getItem("usuario_perfil")) {
-      const alerta = document.getElementById("mensagem-acesso");
-      if (alerta) {
-        alerta.hidden = false;
-        alerta.focus?.();
-      }
-    }
+  <!-- 💬 Formulário de Contato -->
+  <section class="cta" aria-labelledby="titulo-cta">
+    <h2 id="titulo-cta" class="secao-titulo">Vamos conversar?</h2>
+    <p class="cta-texto">
+      Tire suas dúvidas ou solicite um plano personalizado com nossos especialistas cripto.
+    </p>
 
-    // 🎯 Foco inicial no título principal ao carregar
-    window.onload = () => {
-      document.querySelector("h1")?.focus?.();
-    };
-  </script>
+    <a class="whatsapp-btn"
+       href="https://wa.me/5511963372373?text=Olá! Gostaria de saber mais sobre os cursos CryptoVerso."
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Fale agora via WhatsApp com o CryptoVerso">
+      📲 Fale agora via WhatsApp
+    </a>
 
-  <!-- ⬇️ Rodapé institucional -->
-  <footer class="rodape-institucional" role="contentinfo">
-    <section class="rodape-bloco">
-      <p><strong>Agroverso</strong> – Tecnologia para a regeneração da terra e do saber.</p>
-      <p>© 2025 Instituto Graciliana Maria da Conceição – Todos os direitos reservados.</p>
-      <p class="contato-suporte">
-        Suporte técnico: <a href="mailto:suporte@agroverso.tec.br">suporte@agroverso.tec.br</a> · WhatsApp: <a href="https://wa.me/5511963372373" target="_blank" rel="noopener noreferrer">+55 11 9 6337-2373</a>
-      </p>
-    </section>
-  </footer>
+    <p class="form-intro">
+      Ou envie seus dados. Responderemos rapidamente com todas as informações:
+    </p>
+
+    <form id="contato-form"
+          class="formulario-contato"
+          aria-label="Formulário de contato CryptoVerso"
+          autocomplete="on"
+          novalidate>
+
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome" required autocomplete="name" />
+
+      <label for="email">E-mail de contato:</label>
+      <input type="email" id="email" name="email" placeholder="seu@email.com" required autocomplete="email" />
+
+      <label for="curso">Curso de interesse:</label>
+      <select id="curso" name="curso" required>
+        <option value="">Selecione um curso</option>
+        <option value="bitcoin">Fundamentos do Bitcoin</option>
+        <option value="defi">DeFi Essentials</option>
+        <option value="nft">NFTs & Web3</option>
+      </select>
+
+      <!-- Botão de envio -->
+      <button type="submit" class="btn-enviar">Enviar Solicitação</button>
+    </form>
+  </section>
+</main>
+
+<!-- 🧭 Rodapé Institucional CryptoVerso -->
+<div data-include="footer"></div>
+
+<!-- 🧠 Scripts Essenciais do CryptoVerso -->
+<script src="scripts/includes.js" defer></script>
+<script src="scripts/menuLateral.js" defer></script>
+<script src="scripts/footer-loader.js" defer></script>
+<script src="scripts/form-handler.js" defer></script>
 </body>
 </html>
