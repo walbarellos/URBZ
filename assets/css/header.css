@@ -1,17 +1,41 @@
 /* ==========================================================================================
-🎨 header.css – Estilos exclusivos para o cabeçalho institucional do Agroverso
-🌿 Foco em identidade, centralização, acessibilidade e responsividade
-========================================================================================== */
+ � *� header.css – Estilos exclusivos para o cabeçalho institucional (URBZ)
+ Adaptado para combinar com a nova identidade visual (azul‑escuro + azul‑claro)
+ ========================================================================================== */
 
-/* 🟩 Estrutura principal */
+/* 🌐 Variáveis de cor – mantemos o nome, trocamos apenas o valor */
+:root {
+  --ouro-agroverso: #4da8ff;          /* Novo tom azul‑claro para destaques */
+  --branco-puro: #ffffff;             /* Branco permanece igual */
+}
+
+/* 🟦 Estrutura principal – fundo azul‑escuro com leve gradiente */
 .header-principal {
   position: relative;
   width: 100%;
-  background-color: #1C3D27; /* Verde institucional */
-  color: #ffffff;
+  background: linear-gradient(135deg, #0d1e3c 0%, #11274a 100%); /* Azul‑escuro */
+  color: var(--branco-puro);
   text-align: center;
   padding: 3rem 1rem 2.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  overflow: hidden; /* Para efeitos */
+}
+
+/* ✨ Efeito de faixas diagonais sutis (ecoando a arte do logo) */
+.header-principal::before,
+.header-principal::after {
+  content: "";
+  position: absolute;
+  width: 160%;
+  height: 160%;
+  top: -30%;
+  left: -30%;
+  background: linear-gradient(120deg, transparent 20%, rgba(255,255,255,0.03) 40%, transparent 60%);
+  transform: rotate(8deg);
+  pointer-events: none;
+}
+.header-principal::after {
+  transform: rotate(-8deg);
 }
 
 /* 🌿 Logotipo central */
@@ -25,7 +49,11 @@
 .logo-refinada {
   max-width: 160px;
   height: auto;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.4));
+  transition: transform 0.3s ease;
+}
+.logo-refinada:hover {
+  transform: scale(1.05);
 }
 
 /* 📛 Título e slogan */
@@ -34,20 +62,19 @@
   font-weight: 700;
   margin: 0;
   line-height: 1.1;
-  color: white; /* ← Esta linha torna o texto branco */
+  color: var(--branco-puro);
 }
-
 
 .slogan {
   font-size: 1.15rem;
   font-weight: 300;
   margin-top: 0.5rem;
-  color: #f0f0f0;
+  color: #d9e6ff; /* Azul‑claro suave */
 }
 
 .slogan strong {
   font-weight: 600;
-  color: #FFD700; /* Ouro Agroverso */
+  color: var(--ouro-agroverso); /* Destaque azul‑claro */
 }
 
 /* 🔐 Botão de login (ícone com texto abaixo) */
@@ -80,7 +107,7 @@
 
 .texto-login {
   font-size: 0.75rem;
-  color: var(--branco-puro, #ffffff); /* Branco padrão */
+  color: var(--branco-puro);
   line-height: 1;
   margin: 0;
   transition: color 0.3s ease;
@@ -90,12 +117,12 @@
 .botao-login-superior:focus .texto-login,
 .botao-login-superior:active .texto-login,
 .botao-login-superior:hover .texto-login {
-  color: var(--ouro-agroverso, #FFD700); /* Ouro ao interagir */
+  color: var(--ouro-agroverso); /* Azul‑claro no hover */
 }
 
 /* ==========================================================================================
-📱 Responsividade: Mobile First
-========================================================================================== */
+ � *� Responsividade: Mobile First
+ ========================================================================================== */
 @media (max-width: 600px) {
   .logo-refinada {
     max-width: 120px;
