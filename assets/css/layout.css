@@ -69,7 +69,7 @@
   font-size: 1.05rem;                        /* Leve ampliação para leitura ideal */
   font-weight: 400;
   font-family: 'Cabin', sans-serif;         /* Tipografia empática e legível */
-  color: #e6f2ec;                            /* Cor suave clara sobre fundo escuro */
+  color: #ffffff;                            /* Cor suave clara sobre fundo escuro */
   text-align: center;
   line-height: 1.5;
   max-width: 720px;
@@ -79,29 +79,30 @@
 
 /* 🌟 Destaque para as palavras nobres: sabedoria, força e beleza */
 .slogan strong {
-  color: #f4d35e;     /* Dourado regenerativo */
+  color: #ffffff;     /* Dourado regenerativo */
   font-weight: 600;
 }
 
 /* ============================================================================
-🌐 Variáveis Globais do Agroverso – Cores, Espaçamentos, Sombras
-============================================================================ */
+ * 🌐 Variáveis Globais – Paleta URBZ (azul‑escuro / azul‑claro)
+ * Somente valores foram alterados; nomes das variáveis permanecem.
+ * ============================================================================ */
+
 :root {
   /* 🎨 Paleta de Cores Institucionais */
-  --cor-principal: #004225;       /* Verde profundo regenerativo */
-  --cor-clara: #ffffff;           /* Branco puro para texto principal */
-  --cor-destaque: #f4d35e;        /* Dourado regenerativo – sabedoria */
-  --cor-secundaria: #7bb661;      /* Verde claro para destaques naturais */
-  --cor-suave: #e6f2ec;           /* Verde claro suave para fundos */
-  
-  /* 📏 Espaçamentos Padrão */
+  --cor-principal: #0d1e3c;   /* Azul‑marinho profundo URBZ */
+  --cor-clara: #ffffff;       /* Branco puro */
+  --cor-destaque: #d9e6ff;    /* Azul‑gelo suave para realces */
+  --cor-secundaria: #4da8ff;  /* Azul‑claro vivo (destaque principal) */
+  --cor-suave: #eaf2ff;       /* Azul muito claro para fundos suaves */
+
+  /* 📏 Espaçamentos Padrão (inalterados) */
   --espaco-xs: 0.25rem;
   --espaco-sm: 0.5rem;
   --espaco-md: 1rem;
   --espaco-lg: 1.5rem;
   --espaco-xl: 2rem;
 
-  /* 🧱 Sombra para elementos principais */
+  /* 🧱 Sombra para elementos principais (inalterada) */
   --sombra-leve: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
-
