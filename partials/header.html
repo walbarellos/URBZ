@@ -23,11 +23,65 @@
 
   <!-- 📛 Título e slogan -->
   <div class="texto-logo">
+
     <h1 class="titulo-site">O QUE É ESSA CRIPTOMOEDA?</h1>
-    <p class="slogan">
-  <strong>Token</strong> lastreado em <strong>ativo imobiliário físico</strong>.
-  Cada <strong>unidade digital</strong> representa uma fração concreta no imóvel localizado em <strong>Perdizes</strong>.
-    </p>
+
+
+<style>
+  .slogan strong {
+    position: relative;
+    cursor: help;
+    color: #ffffff;
+  }
+
+  /* Tooltip container - todo este codigo css é aplicado as letras destacadas do slogan */
+  .slogan strong:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%; /* posiciona acima da palavra */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(10, 25, 50, 0.85); /* azul escuro translúcido */
+    color: #eee;
+    padding: 8px 12px;
+    border-radius: 8px;
+    white-space: nowrap;
+    font-size: 0.85rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+  }
+
+  /* Mostrar tooltip */
+  .slogan strong:hover::after {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* Pequeno triângulo abaixo do tooltip */
+  .slogan strong:hover::before {
+    content: "";
+    position: absolute;
+    bottom: 115%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: rgba(10, 25, 50, 0.85) transparent transparent transparent;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+</style>
+
+<p class="slogan">
+  <strong data-tooltip="Representação digital fracionada e registrada em blockchain.">Token</strong> lastreado em
+  <strong data-tooltip="Bem imóvel físico como casa, apartamento ou terreno.">ativo imobiliário físico</strong>. 
+  Cada <strong data-tooltip="Unidade digital que corresponde a uma fração do imóvel.">unidade digital</strong> representa uma fração concreta no imóvel localizado em
+  <strong data-tooltip="Bairro valorizado em São Paulo com alta liquidez.">Perdizes</strong>.
+</p>
   </div>
 
 </header>
