@@ -107,6 +107,22 @@
           autocomplete="on"
           novalidate>
 
+<style>
+  /* Escopo seguro: aplica apenas aos elementos com os IDs nome e email */
+  label[for="nome"],
+  label[for="email"],
+  #nome,
+  #email {
+    color: white;
+  }
+
+  /* Cor do placeholder */
+  #nome::placeholder,
+  #email::placeholder {
+    color: #ccc;
+  }
+</style>
+
       <label for="nome">Nome completo:</label>
       <input type="text" id="nome" name="nome" placeholder="Seu nome" required autocomplete="name" />
 
