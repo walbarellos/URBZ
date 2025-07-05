@@ -4,96 +4,87 @@
 🎯 Refinado com sabedoria, força e beleza
 ===================================================================================== -->
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-  <!-- 🌐 Metadados Essenciais -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-  <!-- 📑 SEO e Identidade -->
-  <title>Usuários Vinculados • Agroverso</title>
-  <meta name="description" content="Página protegida de gerenciamento dos usuários vinculados ao sistema Agroverso. Acesso exclusivo para Administradores e Gerentes." />
-  <meta name="author" content="Instituto Graciliana Maria da Conceição" />
-  <meta name="robots" content="noindex, nofollow" />
-
-  <!-- 🎨 Estilo Institucional -->
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
-
-  <!-- 🔐 Segurança de acesso -->
-  <script src="scripts/auth.js" defer></script>
-  <script>
+<!-- 🌐 Metadados Essenciais -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<!-- 📑 SEO e Identidade -->
+<title>Usuários Vinculados • Agroverso</title>
+<meta content="Página protegida de gerenciamento dos usuários vinculados ao sistema Agroverso. Acesso exclusivo para Administradores e Gerentes." name="description"/>
+<meta content="Instituto Graciliana Maria da Conceição" name="author"/>
+<meta content="noindex, nofollow" name="robots"/>
+<!-- 🎨 Estilo Institucional -->
+<link href="style.css" rel="stylesheet"/>
+<link href="assets/favicon.ico" rel="icon" type="image/x-icon"/>
+<!-- 🔐 Segurança de acesso -->
+<script defer="" src="scripts/auth.js"></script>
+<script>
     document.addEventListener("DOMContentLoaded", () => {
       protegerPagina(["administrador", "gerente"]);
     });
   </script>
 </head>
-
 <body class="pagina-protegida">
-  <!-- ⬆️ Cabeçalho institucional fixo -->
-  <header class="header-principal">
-    <nav class="navegacao-principal">
-      <ul class="nav-menu">
-        <li><a href="index.html">🏠 Início</a></li>
-        <li><a href="dashboard.html">📊 Painel</a></li>
-        <li><a href="usuarios.html" class="ativo">👥 Usuários</a></li>
-        <li><button class="btn-secundario" onclick="logout()">🚪 Sair</button></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- 🎯 Conteúdo protegido -->
-  <main class="conteudo-principal" role="main" aria-label="Painel de usuários">
-    <section class="bloco-destaque">
-      <h1 class="titulo-secao">Usuários Vinculados ao Sistema</h1>
-      <p class="texto-suporte">
-        Abaixo estão listados os usuários vinculados à plataforma Agroverso. A exibição completa depende do seu nível de permissão.
-      </p>
-
-      <div class="tabela-container">
-        <!-- 🧾 Tabela simulada -->
-        <table class="tabela-usuarios" aria-label="Lista de usuários vinculados">
-          <thead>
-            <tr>
-              <th>Nome</th>
-              <th>Email</th>
-              <th>Perfil</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Ana Souza</td>
-              <td>ana@agroverso.tec.br</td>
-              <td>Gerente</td>
-              <td>✅ Ativo</td>
-            </tr>
-            <tr>
-              <td>João Lima</td>
-              <td>joao@agroverso.tec.br</td>
-              <td>Técnico</td>
-              <td>⏳ Pendente</td>
-            </tr>
-            <tr>
-              <td>Marina Dias</td>
-              <td>marina@agroverso.tec.br</td>
-              <td>Administrador</td>
-              <td>✅ Ativo</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-  </main>
-
-  <!-- 📢 Mensagem de acessibilidade em caso de erro -->
-  <section id="mensagem-acesso" class="mensagem-acesso" role="alert" aria-live="assertive" hidden>
-    <p>Você não tem permissão para acessar esta página. Redirecionando para login...</p>
-  </section>
-
-  <!-- 🔒 Inclusão de script adicional para foco e acessibilidade -->
-  <script>
+<!-- ⬆️ Cabeçalho institucional fixo -->
+<header class="header-principal">
+<nav class="navegacao-principal">
+<ul class="nav-menu">
+<li><a href="index.html">🏠 Início</a></li>
+<li><a href="dashboard.html">📊 Painel</a></li>
+<li><a class="ativo" href="usuarios.html">👥 Usuários</a></li>
+<li><button class="btn-secundario" onclick="logout()">🚪 Sair</button></li>
+</ul>
+</nav>
+</header>
+<!-- 🎯 Conteúdo protegido -->
+<main aria-label="Painel de usuários" class="conteudo-principal" role="main">
+<section class="bloco-destaque">
+<h1 class="titulo-secao">---</h1>
+<p class="texto-suporte">## 🤝 Contato Oficial</p>
+<div class="tabela-container">
+<!-- 🧾 Tabela simulada -->
+<table aria-label="Lista de usuários vinculados" class="tabela-usuarios">
+<thead>
+<tr>
+<th>Nome</th>
+<th>Email</th>
+<th>Perfil</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ana Souza</td>
+<td>ana@agroverso.tec.br</td>
+<td>Gerente</td>
+<td>✅ Ativo</td>
+</tr>
+<tr>
+<td>João Lima</td>
+<td>joao@agroverso.tec.br</td>
+<td>Técnico</td>
+<td>⏳ Pendente</td>
+</tr>
+<tr>
+<td>Marina Dias</td>
+<td>marina@agroverso.tec.br</td>
+<td>Administrador</td>
+<td>✅ Ativo</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</main>
+<!-- 📢 Mensagem de acessibilidade em caso de erro -->
+<section aria-live="assertive" class="mensagem-acesso" hidden="" id="mensagem-acesso" role="alert">
+<p>Para integração de dApps, governança avançada ou apoio institucional:</p>
+</section>
+<!-- 🔒 Inclusão de script adicional para foco e acessibilidade -->
+<script>
     // 🔁 Feedback automático para leitores de tela
     if (!sessionStorage.getItem("usuario_perfil")) {
       const alerta = document.getElementById("mensagem-acesso");
@@ -108,16 +99,13 @@
       document.querySelector("h1")?.focus?.();
     };
   </script>
-
-  <!-- ⬇️ Rodapé institucional -->
-  <footer class="rodape-institucional" role="contentinfo">
-    <section class="rodape-bloco">
-      <p><strong>Agroverso</strong> – Tecnologia para a regeneração da terra e do saber.</p>
-      <p>© 2025 Instituto Graciliana Maria da Conceição – Todos os direitos reservados.</p>
-      <p class="contato-suporte">
-        Suporte técnico: <a href="mailto:suporte@agroverso.tec.br">suporte@agroverso.tec.br</a> · WhatsApp: <a href="https://wa.me/5511963372373" target="_blank" rel="noopener noreferrer">+55 11 9 6337-2373</a>
-      </p>
-    </section>
-  </footer>
+<!-- ⬇️ Rodapé institucional -->
+<footer class="rodape-institucional" role="contentinfo">
+<section class="rodape-bloco">
+<p>- ✉️ contato@urbz.tec.br</p>
+<p>- 🌐 https://urbz.tec.br</p>
+<p class="contato-suporte">- 🐦 https://twitter.com/urbztoken</p>
+</section>
+</footer>
 </body>
 </html>

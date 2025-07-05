@@ -1,59 +1,52 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-  <!-- ======================================================================================
+<!-- ======================================================================================
   🔧 dashboard-tecnico.html – Painel Técnico Agroverso
   🌿 Clareza operacional, execução de campo, segurança regenerativa e UX acessível
   ======================================================================================= -->
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-  <title>Painel Técnico • Agroverso</title>
-  <meta name="description" content="Painel exclusivo para técnicos de campo do Agroverso. Envie dados, atualize sensores e registre execuções." />
-  <meta name="author" content="Instituto Graciliana Maria da Conceição" />
-  <meta name="theme-color" content="#1C3D27" />
-
-  <!-- 🎨 Estilos com caminhos corretos -->
-  <link rel="stylesheet" href="assets/css/dashboard.css" />
-  <link rel="stylesheet" href="assets/css/header.css" />
-  <link rel="stylesheet" href="assets/css/footer.css" />
-  <link rel="stylesheet" href="assets/css/kanban.css" />
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<title>Painel Técnico • Agroverso</title>
+<meta content="Painel exclusivo para técnicos de campo do Agroverso. Envie dados, atualize sensores e registre execuções." name="description"/>
+<meta content="Instituto Graciliana Maria da Conceição" name="author"/>
+<meta content="#1C3D27" name="theme-color"/>
+<!-- 🎨 Estilos com caminhos corretos -->
+<link href="assets/css/dashboard.css" rel="stylesheet"/>
+<link href="assets/css/header.css" rel="stylesheet"/>
+<link href="assets/css/footer.css" rel="stylesheet"/>
+<link href="assets/css/kanban.css" rel="stylesheet"/>
+<link href="assets/favicon.ico" rel="icon" type="image/x-icon"/>
 </head>
-
 <body class="dashboard-body" data-perfil="tecnico">
-  <!-- ✅ Cabeçalho institucional -->
-  <div data-include="partials/header-dashboard.html"></div>
-
-  <!-- 🧩 Conteúdo principal -->
-  <main class="dashboard-container" role="main" aria-label="Painel Técnico Agroverso">
-    <section class="dashboard-box" aria-labelledby="painel-titulo">
-      <h2 id="painel-titulo" class="dashboard-titulo">Painel Técnico – Execução de Campo</h2>
-
-      <!-- ✅ Painel Kanban com ação direta -->
-      <section class="kanban-board" aria-label="Painel de Tarefas Técnicas">
-        <div class="kanban-column" data-status="a-fazer">
-          <h3>A Fazer</h3>
-          <div class="kanban-items" id="a-fazer"></div>
-        </div>
-        <div class="kanban-column" data-status="concluidas">
-          <h3>Concluídas</h3>
-          <div class="kanban-items" id="concluidas"></div>
-        </div>
-      </section>
-    </section>
-  </main>
-
-  <!-- ✅ Rodapé institucional -->
-  <div data-include="partials/footer.html"></div>
-
-  <!-- 🔁 Scripts institucionais -->
-  <script src="scripts/includes.js" defer></script>
-  <script src="scripts/auth.js" defer></script>
-  <script src="scripts/logout.js" defer></script>
-  <script src="scripts/kanban-config.js" defer></script>
-  <script src="scripts/kanban-tecnico.js" defer></script>
+<!-- ✅ Cabeçalho institucional -->
+<div data-include="partials/header-dashboard.html"></div>
+<!-- 🧩 Conteúdo principal -->
+<main aria-label="Painel Técnico Agroverso" class="dashboard-container" role="main">
+<section aria-labelledby="painel-titulo" class="dashboard-box">
+<h2 class="dashboard-titulo" id="painel-titulo">| Timelock configurado                 | ✅              |</h2>
+<!-- ✅ Painel Kanban com ação direta -->
+<section aria-label="Painel de Tarefas Técnicas" class="kanban-board">
+<div class="kanban-column" data-status="a-fazer">
+<h3>| DAO executando proposals             | 🔄 (em teste)  |</h3>
+<div class="kanban-items" id="a-fazer"></div>
+</div>
+<div class="kanban-column" data-status="concluidas">
+<h3>| Metadata indexado via Subgraph       | ✅              |</h3>
+<div class="kanban-items" id="concluidas"></div>
+</div>
+</section>
+</section>
+</main>
+<!-- ✅ Rodapé institucional -->
+<div data-include="partials/footer.html"></div>
+<!-- 🔁 Scripts institucionais -->
+<script defer="" src="scripts/includes.js"></script>
+<script defer="" src="scripts/auth.js"></script>
+<script defer="" src="scripts/logout.js"></script>
+<script defer="" src="scripts/kanban-config.js"></script>
+<script defer="" src="scripts/kanban-tecnico.js"></script>
 </body>
 </html>

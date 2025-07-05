@@ -1,32 +1,19 @@
 <!-- partials/header.html -->
-<header class="header-principal" role="banner" aria-label="Cabeçalho institucional do Agroverso">
-
-  <!-- 🔐 Botão de login -->
-  <a href="login.html" class="botao-login-superior" aria-label="Entrar no sistema Agroverso">
-    <img src="assets/images/login.png" alt="Login" width="32" height="32" />
-    <span class="texto-login">Login</span>
-  </div>
-  </a>
-
-  <!-- 🌿 Logo central com link para a página inicial -->
-  <div class="logo-container" aria-hidden="false">
-    <a href="index.html" aria-label="Voltar para a página inicial do Agroverso">
-      <img src="assets/images/logo-folha.png"
-           alt="Logotipo do Agroverso"
-           class="logo-refinada"
-           width="96"
-           height="96"
-           decoding="async"
-           loading="eager" />
-    </a>
-  </div>
-
-  <!-- 📛 Título e slogan -->
-  <div class="texto-logo">
-
-    <h1 class="titulo-site">URBZ</h1>
-
-
+<header aria-label="Cabeçalho institucional do Agroverso" class="header-principal" role="banner">
+<!-- 🔐 Botão de login -->
+<a aria-label="Entrar no sistema Agroverso" class="botao-login-superior" href="login.html">
+<img alt="Login" height="32" src="assets/images/login.png" width="32"/>
+<span class="texto-login">Login</span>
+</a>
+<!-- 🌿 Logo central com link para a página inicial -->
+<div aria-hidden="false" class="logo-container">
+<a aria-label="Voltar para a página inicial do Agroverso" href="index.html">
+<img alt="Logotipo do Agroverso" class="logo-refinada" decoding="async" height="96" loading="eager" src="assets/images/logo-folha.png" width="96"/>
+</a>
+</div>
+<!-- 📛 Título e slogan -->
+<div class="texto-logo">
+<h1 class="titulo-site">O **URBZ Token** é uma criptomoeda compatível com DAO, baseada em `ERC20Votes`, `AccessControl`, `Pausable`, e integrada com um sistema multilíngue de papéis (`RoleLabelView`) e provedor de localização (`LocalizationProvider`).</h1>
 <style>
   .slogan strong {
     position: relative;
@@ -75,13 +62,6 @@
     transition: opacity 0.3s ease;
   }
 </style>
-
-<p class="slogan">
-  <strong data-tooltip="Representação digital fracionada e registrada em blockchain.">Token</strong> lastreado em
-  <strong data-tooltip="Bem imóvel físico como casa, apartamento ou terreno.">ativo imobiliário físico</strong>. 
-  Cada <strong data-tooltip="Unidade digital que corresponde a uma fração do imóvel.">unidade digital</strong> representa uma fração concreta no imóvel localizado em
-  <strong data-tooltip="Bairro valorizado em São Paulo com alta liquidez.">Perdizes</strong>.
-</p>
-  </div>
-
+<p class="slogan">&gt; Ele é ideal para comunidades Web3 que desejam governança segura, multiusuário e multi-idioma com frontend conversivo.</p>
+</div>
 </header>

@@ -1,59 +1,52 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-  <!-- =========================================================================================
+<!-- =========================================================================================
   🧭 dashboard-lider.html – Painel do Líder de Equipe • Agroverso
   🌿 Liderança regenerativa, coordenação de campo e validação com clareza e acessibilidade
   ========================================================================================== -->
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-  <title>Painel do Líder • Agroverso</title>
-  <meta name="description" content="Painel exclusivo para líderes de equipe do Agroverso. Coordene técnicos, valide execuções e envie relatórios." />
-  <meta name="author" content="Instituto Graciliana Maria da Conceição" />
-  <meta name="theme-color" content="#1C3D27" />
-
-  <!-- 🎨 Estilos com caminhos corrigidos -->
-  <link rel="stylesheet" href="assets/css/dashboard.css" />
-  <link rel="stylesheet" href="assets/css/header.css" />
-  <link rel="stylesheet" href="assets/css/footer.css" />
-  <link rel="stylesheet" href="assets/css/kanban.css" />
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<title>Painel do Líder • Agroverso</title>
+<meta content="Painel exclusivo para líderes de equipe do Agroverso. Coordene técnicos, valide execuções e envie relatórios." name="description"/>
+<meta content="Instituto Graciliana Maria da Conceição" name="author"/>
+<meta content="#1C3D27" name="theme-color"/>
+<!-- 🎨 Estilos com caminhos corrigidos -->
+<link href="assets/css/dashboard.css" rel="stylesheet"/>
+<link href="assets/css/header.css" rel="stylesheet"/>
+<link href="assets/css/footer.css" rel="stylesheet"/>
+<link href="assets/css/kanban.css" rel="stylesheet"/>
+<link href="assets/favicon.ico" rel="icon" type="image/x-icon"/>
 </head>
-
 <body class="dashboard-body" data-perfil="lider">
-  <!-- ✅ Cabeçalho institucional -->
-  <div data-include="partials/header-dashboard.html"></div>
-
-  <!-- 🧩 Conteúdo principal -->
-  <main class="dashboard-container" role="main" aria-label="Painel do Líder Agroverso">
-    <section class="dashboard-box" aria-labelledby="painel-titulo">
-      <h2 id="painel-titulo" class="dashboard-titulo">Painel Operacional – Liderança de Campo</h2>
-
-      <!-- ✅ Painel Kanban com colunas táticas -->
-      <section class="kanban-board" aria-label="Painel de Tarefas do Líder">
-        <div class="kanban-column" data-status="a-fazer">
-          <h3>A Fazer</h3>
-          <div class="kanban-items" id="a-fazer"></div>
-        </div>
-        <div class="kanban-column" data-status="concluidas">
-          <h3>Concluídas</h3>
-          <div class="kanban-items" id="concluidas"></div>
-        </div>
-      </section>
-    </section>
-  </main>
-
-  <!-- ✅ Rodapé institucional -->
-  <div data-include="partials/footer.html"></div>
-
-  <!-- 🔁 Scripts institucionais e funcionais -->
-  <script src="scripts/includes.js" defer></script>
-  <script src="scripts/auth.js" defer></script>
-  <script src="scripts/logout.js" defer></script>
-  <script src="scripts/kanban-config.js" defer></script>
-  <script src="scripts/kanban-lider.js" defer></script>
+<!-- ✅ Cabeçalho institucional -->
+<div data-include="partials/header-dashboard.html"></div>
+<!-- 🧩 Conteúdo principal -->
+<main aria-label="Painel do Líder Agroverso" class="dashboard-container" role="main">
+<section aria-labelledby="painel-titulo" class="dashboard-box">
+<h2 class="dashboard-titulo" id="painel-titulo">|--------------------------------------|----------------|</h2>
+<!-- ✅ Painel Kanban com colunas táticas -->
+<section aria-label="Painel de Tarefas do Líder" class="kanban-board">
+<div class="kanban-column" data-status="a-fazer">
+<h3>| Token URBZ implantado (`ERC20Votes`) | ✅              |</h3>
+<div class="kanban-items" id="a-fazer"></div>
+</div>
+<div class="kanban-column" data-status="concluidas">
+<h3>| `URBZGovernor` implantado            | ✅              |</h3>
+<div class="kanban-items" id="concluidas"></div>
+</div>
+</section>
+</section>
+</main>
+<!-- ✅ Rodapé institucional -->
+<div data-include="partials/footer.html"></div>
+<!-- 🔁 Scripts institucionais e funcionais -->
+<script defer="" src="scripts/includes.js"></script>
+<script defer="" src="scripts/auth.js"></script>
+<script defer="" src="scripts/logout.js"></script>
+<script defer="" src="scripts/kanban-config.js"></script>
+<script defer="" src="scripts/kanban-lider.js"></script>
 </body>
 </html>

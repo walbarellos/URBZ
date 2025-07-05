@@ -1,120 +1,91 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-  <!-- ✅ Codificação e Responsividade -->
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- 🎯 SEO Estratégico com Identidade Institucional -->
-  <title>Irrigação Inteligente – Agroverso</title>
-  <meta name="description" content="Sistema Agroverso de irrigação inteligente com sensores de solo, automação via app e controle regenerativo da água. Economize com tecnologia e preserve o solo." />
-  <meta name="keywords" content="irrigação inteligente, agroverso, sensores de solo, agricultura regenerativa, agro tecnologia" />
-  <meta name="author" content="Instituto Graciliana Maria da Conceição" />
-  <meta name="robots" content="index, follow" />
-
-  <!-- 🌐 Open Graph para Compartilhamento -->
-  <meta property="og:title" content="Irrigação Inteligente – Agroverso" />
-  <meta property="og:description" content="Tecnologia regenerativa com sensores de solo, controle automatizado e economia de água. Conheça a solução Agroverso." />
-  <meta property="og:image" content="assets/images/irrigacao-1.jpg" />
-  <meta property="og:url" content="https://agroverso.tec.br/produto-irrigacao.html" />
-  <meta property="og:type" content="website" />
-
-  <!-- 📱 PWA e Identidade -->
-  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
-  <link rel="manifest" href="manifest.json" />
-  <meta name="theme-color" content="#004225" />
-  <meta name="color-scheme" content="light dark" />
-
-  <!-- 🎨 Estilos Modulares do Agroverso -->
-  <link rel="stylesheet" href="assets/css/base.css" />
-  <link rel="stylesheet" href="assets/css/layout.css" />
-  <link rel="stylesheet" href="assets/css/produtos.css" />
-  <link rel="stylesheet" href="assets/css/carrossel.css" />
-  <link rel="stylesheet" href="assets/css/responsivo.css" />
-  <link rel="stylesheet" href="assets/css/footer.css" />
-
+<!-- ✅ Codificação e Responsividade -->
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- 🎯 SEO Estratégico com Identidade Institucional -->
+<title>Irrigação Inteligente – Agroverso</title>
+<meta content="Sistema Agroverso de irrigação inteligente com sensores de solo, automação via app e controle regenerativo da água. Economize com tecnologia e preserve o solo." name="description"/>
+<meta content="irrigação inteligente, agroverso, sensores de solo, agricultura regenerativa, agro tecnologia" name="keywords"/>
+<meta content="Instituto Graciliana Maria da Conceição" name="author"/>
+<meta content="index, follow" name="robots"/>
+<!-- 🌐 Open Graph para Compartilhamento -->
+<meta content="Irrigação Inteligente – Agroverso" property="og:title"/>
+<meta content="Tecnologia regenerativa com sensores de solo, controle automatizado e economia de água. Conheça a solução Agroverso." property="og:description"/>
+<meta content="assets/images/irrigacao-1.jpg" property="og:image"/>
+<meta content="https://agroverso.tec.br/produto-irrigacao.html" property="og:url"/>
+<meta content="website" property="og:type"/>
+<!-- 📱 PWA e Identidade -->
+<link href="assets/images/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="manifest.json" rel="manifest"/>
+<meta content="#004225" name="theme-color"/>
+<meta content="light dark" name="color-scheme"/>
+<!-- 🎨 Estilos Modulares do Agroverso -->
+<link href="assets/css/base.css" rel="stylesheet"/>
+<link href="assets/css/layout.css" rel="stylesheet"/>
+<link href="assets/css/produtos.css" rel="stylesheet"/>
+<link href="assets/css/carrossel.css" rel="stylesheet"/>
+<link href="assets/css/responsivo.css" rel="stylesheet"/>
+<link href="assets/css/footer.css" rel="stylesheet"/>
 </head>
-
 <body>
-  <!-- ⬆️ Cabeçalho institucional -->
-  <div data-include="partials/header-produto.html"></div>
-
-
-  <!-- 🌱 Conteúdo principal do produto -->
-  <main class="conteudo-produto" role="main" aria-labelledby="titulo-irrigacao">
-    <section class="produto-destaque">
-      <h2 id="titulo-irrigacao">Irrigação Inteligente</h2>
-      <p class="subtitulo-produto">
-        Eficiência hídrica com sensores, controle remoto e economia regenerativa
-      </p>
-
-      <!-- 🎠 Carrossel com integração total -->
-      <section aria-labelledby="galeria-irrigacao">
-        <h3 id="galeria-irrigacao" class="secao-titulo">Galeria do Sistema</h3>
-        <div class="carrossel-container" aria-label="Galeria de imagens do sistema de irrigação inteligente" onclick="abrirCarrosselFullscreen(this)">
-          <div class="carrossel transicao" id="carrossel-irrigacao">
-            <img src="assets/images/irrigacao-1.jpg" alt="Sistema de irrigação Agroverso com sensores no campo" loading="lazy" />
-            <img src="assets/images/irrigacao-2.jpg" alt="Sensores de solo instalados com automação digital" loading="lazy" />
-            <img src="assets/images/irrigacao-3.jpg" alt="Painel web Agroverso exibindo níveis de umidade e temperatura" loading="lazy" />
-          </div>
-        </div>
-      </section>
-
-      <!-- 🔘 Botão de fechar fullscreen -->
-      <button id="fecharFullscreen" onclick="fecharCarrosselFullscreen()" hidden aria-hidden="true">Fechar</button>
-
-      <!-- 🧠 Seção de Descrição Técnica e Aplicações -->
-      <section class="descricao-produto">
-
-        <p> </p>
-        <p> </p>
-        <p> </p>
-
-        <h3>Sobre o sistema</h3>
-        <p>
-          O <strong>Sistema de Irrigação Inteligente Agroverso</strong> integra sensores de umidade e temperatura do solo com controle remoto via aplicativo. Seu funcionamento é dinâmico, preditivo e baseado em dados climáticos, garantindo irrigação apenas quando necessário.
-        </p>
-
-        <h3>Benefícios principais</h3>
-        <ul>
-          <li>💧 Economia de até <strong>70% de água</strong> com acionamento preciso</li>
-          <li>🌡️ Leitura contínua de umidade e temperatura do solo em tempo real</li>
-          <li>📲 Controle remoto completo via app Agroverso, com notificações inteligentes</li>
-          <li>🧠 Integração com previsão do tempo e irrigação automática preditiva</li>
-          <li>🌱 Preserva a microbiota do solo e evita compactações desnecessárias</li>
-        </ul>
-
-        <h3>Aplicações recomendadas</h3>
-        <p>
-          Ideal para <strong>hortas, pomares, jardins, estufas, viveiros e sistemas agroflorestais</strong>. Aplicável em pequenas propriedades, projetos urbanos, escolas, agroecologia comunitária e agricultura familiar.
-        </p>
-
-        <!-- 📲 Botão de orçamento via WhatsApp -->
-        <div class="chamada-final">
-          <h3>Solicite seu orçamento agora mesmo</h3>
-          <p>Atendimento especializado para sua propriedade, comunidade ou iniciativa regenerativa.</p>
-          <a href="https://wa.me/5511963372373?text=Olá! Tenho interesse no sistema de Irrigação Inteligente do Agroverso e gostaria de um orçamento personalizado."
-             target="_blank"
-             rel="noopener noreferrer"
-             class="botao-acao"
-             aria-label="Solicitar orçamento via WhatsApp com a equipe Agroverso">
+<!-- ⬆️ Cabeçalho institucional -->
+<div data-include="partials/header-produto.html"></div>
+<!-- 🌱 Conteúdo principal do produto -->
+<main aria-labelledby="titulo-irrigacao" class="conteudo-produto" role="main">
+<section class="produto-destaque">
+<h2 id="titulo-irrigacao">### Resultado:</h2>
+<p class="subtitulo-produto">&gt; https://www.tally.xyz/gov/urbz *(link oficial pós-validação)*</p>
+<!-- 🎠 Carrossel com integração total -->
+<section aria-labelledby="galeria-irrigacao">
+<h3 class="secao-titulo" id="galeria-irrigacao">---</h3>
+<div aria-label="Galeria de imagens do sistema de irrigação inteligente" class="carrossel-container" onclick="abrirCarrosselFullscreen(this)">
+<div class="carrossel transicao" id="carrossel-irrigacao">
+<img alt="Sistema de irrigação Agroverso com sensores no campo" loading="lazy" src="assets/images/irrigacao-1.jpg"/>
+<img alt="Sensores de solo instalados com automação digital" loading="lazy" src="assets/images/irrigacao-2.jpg"/>
+<img alt="Painel web Agroverso exibindo níveis de umidade e temperatura" loading="lazy" src="assets/images/irrigacao-3.jpg"/>
+</div>
+</div>
+</section>
+<!-- 🔘 Botão de fechar fullscreen -->
+<button aria-hidden="true" hidden="" id="fecharFullscreen" onclick="fecharCarrosselFullscreen()">Fechar</button>
+<!-- 🧠 Seção de Descrição Técnica e Aplicações -->
+<section class="descricao-produto">
+<p>## 🔗 Integração com Snapshot.org</p>
+<p>&gt; Caso deseje **votação off-chain com pesos ERC20**, útil para comunidades abertas.</p>
+<p>### 1. Deploy (ou use) ENS</p>
+<h3>- Criar ENS: `urbz.eth`</h3>
+<p>- Associar wallet DAO como dono</p>
+<h3>### 2. Criar Space</h3>
+<ul>
+<li>💧 Economia de até <strong>70% de água</strong> com acionamento preciso</li>
+<li>🌡️ Leitura contínua de umidade e temperatura do solo em tempo real</li>
+<li>📲 Controle remoto completo via app Agroverso, com notificações inteligentes</li>
+<li>🧠 Integração com previsão do tempo e irrigação automática preditiva</li>
+<li>🌱 Preserva a microbiota do solo e evita compactações desnecessárias</li>
+</ul>
+<h3>- Acesse https://snapshot.org/#/create</h3>
+<p>- Conecte-se com wallet ADMIN</p>
+<!-- 📲 Botão de orçamento via WhatsApp -->
+<div class="chamada-final">
+<h3>- Preencha:</h3>
+<p>- **Name**: URBZ DAO</p>
+<a aria-label="Solicitar orçamento via WhatsApp com a equipe Agroverso" class="botao-acao" href="https://wa.me/5511963372373?text=Olá! Tenho interesse no sistema de Irrigação Inteligente do Agroverso e gostaria de um orçamento personalizado." rel="noopener noreferrer" target="_blank">
             📲 Solicitar orçamento via WhatsApp
           </a>
-        </div>
-      </section>
-    </section>
-  </main>
-
-  <!-- 🧭 Rodapé Institucional -->
-  <div data-include="footer"></div>
-
-
-  <!-- 🧠 Scripts Essenciais -->
-  <script src="scripts/router-auto.js" defer></script>
-  <script src="scripts/menu-lateral.js" defer></script>
-  <script src="scripts/carrossel.js" defer></script>
-  <script src="scripts/footer-loader.js" defer></script>
-
+</div>
+</section>
+</section>
+</main>
+<!-- 🧭 Rodapé Institucional -->
+<div data-include="footer"></div>
+<!-- 🧠 Scripts Essenciais -->
+<script defer="" src="scripts/router-auto.js"></script>
+<script defer="" src="scripts/menu-lateral.js"></script>
+<script defer="" src="scripts/carrossel.js"></script>
+<script defer="" src="scripts/footer-loader.js"></script>
 </body>
 </html>

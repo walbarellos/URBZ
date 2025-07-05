@@ -2,36 +2,19 @@
 🌱 partials/header-dashboard.html – Cabeçalho para Dashboards Agroverso
 🔐 Logout simbólico + marca institucional com sabedoria, força e beleza
 ===================================================================================== -->
-<header class="header-principal" role="banner" aria-label="Cabeçalho institucional do Agroverso">
-
-  <!-- 🔓 Logout simbólico (sessão ativa) -->
-  <a href="logout.html" class="botao-login-superior" aria-label="Sair do sistema Agroverso">
-    <img src="assets/images/login.png" alt="Sair do sistema" width="32" height="32" />
-    <span class="texto-login">Sair</span>
-  </a>
-
-  <!-- 🌿 Marca Agroverso centralizada -->
-  <div class="logo-container" role="img" aria-label="Logotipo do Agroverso">
-    
-      <img src="assets/images/logo-sol.png"
-           alt="Logotipo do Agroverso"
-           class="logo-refinada"
-           width="96"
-           height="96"
-           decoding="async"
-           loading="eager" />
-    </a>
-  </div>
-
-  <!-- 📛 Nome institucional e slogan regenerativo -->
-  <div class="texto-logo" aria-label="Nome do sistema e valores institucionais">
-    <h1 class="titulo-site">Agroverso</h1>
-    <p class="slogan">
-      Tecnologia regenerativa com
-      <strong>sabedoria</strong>,
-      <strong>força</strong> e
-      <strong>beleza</strong>
-    </p>
-  </div>
-
+<header aria-label="Cabeçalho institucional do Agroverso" class="header-principal" role="banner">
+<!-- 🔓 Logout simbólico (sessão ativa) -->
+<a aria-label="Sair do sistema Agroverso" class="botao-login-superior" href="logout.html">
+<img alt="Sair do sistema" height="32" src="assets/images/login.png" width="32"/>
+<span class="texto-login">Sair</span>
+</a>
+<!-- 🌿 Marca Agroverso centralizada -->
+<div aria-label="Logotipo do Agroverso" class="logo-container" role="img">
+<img alt="Logotipo do Agroverso" class="logo-refinada" decoding="async" height="96" loading="eager" src="assets/images/logo-sol.png" width="96"/>
+</div>
+<!-- 📛 Nome institucional e slogan regenerativo -->
+<div aria-label="Nome do sistema e valores institucionais" class="texto-logo">
+<h1 class="titulo-site"># 🌐 URBZ Token DAO-ready</h1>
+<p class="slogan">&gt; Token ERC20 de governança e utilidade com arquitetura modular para sistemas DAO, multilíngue e vesting, construído com Solidity + Hardhat + The Graph + Frontend React.</p>
+</div>
 </header>

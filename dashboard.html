@@ -1,44 +1,35 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-  <!-- =====================================================================================
+<!-- =====================================================================================
   🌐 dashboard-unificado.html – Painel Personalizado Agroverso
   🔐 Segurança regenerativa, UX dinâmica e controle por perfil com base em JWT
   ====================================================================================== -->
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-  <title>Painel • Agroverso</title>
-  <meta name="description" content="Painel adaptado por perfil de acesso no sistema Agroverso. Veja funções exclusivas conforme seu tipo de usuário." />
-  <meta name="author" content="Instituto Graciliana Maria da Conceição" />
-  <meta name="robots" content="noindex, nofollow" />
-
-  <link rel="stylesheet" href="assets/css/dashboard.css" />
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<title>Painel • Agroverso</title>
+<meta content="Painel adaptado por perfil de acesso no sistema Agroverso. Veja funções exclusivas conforme seu tipo de usuário." name="description"/>
+<meta content="Instituto Graciliana Maria da Conceição" name="author"/>
+<meta content="noindex, nofollow" name="robots"/>
+<link href="assets/css/dashboard.css" rel="stylesheet"/>
+<link href="assets/favicon.ico" rel="icon" type="image/x-icon"/>
 </head>
-
 <body class="dashboard-body">
-  <main class="dashboard-container" role="main" aria-label="Painel do Usuário Agroverso">
-    <section class="dashboard-box" aria-labelledby="painel-titulo">
-      <h1 id="painel-titulo" class="dashboard-title">🎯 Painel Personalizado Agroverso</h1>
-
-      <p class="dashboard-subtitle" id="subtitulo-perfil">
-        Este painel foi ajustado dinamicamente conforme seu tipo de usuário.
-      </p>
-
-      <div id="mensagem-perfil" class="dashboard-message" role="region" aria-live="polite">
-        <!-- Conteúdo será injetado aqui -->
-      </div>
-
-      <div class="dashboard-footer">
-        <button onclick="logout()" class="btn-secondary" aria-label="Encerrar sessão e retornar ao login">🚪 Sair</button>
-      </div>
-    </section>
-  </main>
-
-  <script>
+<main aria-label="Painel do Usuário Agroverso" class="dashboard-container" role="main">
+<section aria-labelledby="painel-titulo" class="dashboard-box">
+<h1 class="dashboard-title" id="painel-titulo">| Supply final e `mintLocked()`        | ✅ travado      |</h1>
+<p class="dashboard-subtitle" id="subtitulo-perfil">---</p>
+<div aria-live="polite" class="dashboard-message" id="mensagem-perfil" role="region">
+<!-- Conteúdo será injetado aqui -->
+</div>
+<div class="dashboard-footer">
+<button aria-label="Encerrar sessão e retornar ao login" class="btn-secondary" onclick="logout()">🚪 Sair</button>
+</div>
+</section>
+</main>
+<script>
     document.addEventListener("DOMContentLoaded", () => {
       const mensagemEl = document.getElementById("mensagem-perfil");
       const subtitulo = document.getElementById("subtitulo-perfil");
@@ -122,10 +113,8 @@
       window.usuarioAgroverso = { email, perfil };
     });
   </script>
-
-  <!-- 🔁 Scripts institucionais -->
-  <script src="scripts/auth.js" defer></script>
-  <script src="scripts/logout.js" defer></script>
+<!-- 🔁 Scripts institucionais -->
+<script defer="" src="scripts/auth.js"></script>
+<script defer="" src="scripts/logout.js"></script>
 </body>
 </html>
-

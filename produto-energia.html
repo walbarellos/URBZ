@@ -1,119 +1,91 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-  <!-- ✅ Codificação e responsividade -->
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- 🎯 SEO e Identidade Estratégica -->
-  <title>Energia Solar Inteligente – Agroverso</title>
-  <meta name="description" content="Sistema Agroverso de energia solar com monitoramento remoto, eficiência fotovoltaica e integração a comunidades regenerativas. Geração limpa com controle digital." />
-  <meta name="keywords" content="energia solar, agroverso, painel solar, fotovoltaica, geração autônoma, microgrid, sustentabilidade, agroecologia" />
-  <meta name="author" content="Instituto Graciliana Maria da Conceição" />
-  <meta name="robots" content="index, follow" />
-
-  <!-- 🌐 Open Graph – Compartilhamento social -->
-  <meta property="og:title" content="Energia Solar Inteligente – Agroverso" />
-  <meta property="og:description" content="Transforme sol em autonomia regenerativa. Conheça o sistema de energia solar inteligente do Agroverso para propriedades rurais e agrovilas." />
-  <meta property="og:image" content="assets/images/energia-1.jpg" />
-  <meta property="og:url" content="https://agroverso.tec.br/produto-energia.html" />
-  <meta property="og:type" content="website" />
-
-  <!-- 🖼️ Identidade visual e estrutura de app -->
-  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
-  <link rel="manifest" href="manifest.json" />
-  <meta name="theme-color" content="#004225" />
-  <meta name="color-scheme" content="light dark" />
-
-  <!-- 🎨 Estilos Modulares do Agroverso -->
-  <link rel="stylesheet" href="assets/css/base.css" />
-  <link rel="stylesheet" href="assets/css/layout.css" />
-  <link rel="stylesheet" href="assets/css/produtos.css" />
-  <link rel="stylesheet" href="assets/css/carrossel.css" />
-  <link rel="stylesheet" href="assets/css/responsivo.css" />
-  <link rel="stylesheet" href="assets/css/footer.css" />
-
+<!-- ✅ Codificação e responsividade -->
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- 🎯 SEO e Identidade Estratégica -->
+<title>Energia Solar Inteligente – Agroverso</title>
+<meta content="Sistema Agroverso de energia solar com monitoramento remoto, eficiência fotovoltaica e integração a comunidades regenerativas. Geração limpa com controle digital." name="description"/>
+<meta content="energia solar, agroverso, painel solar, fotovoltaica, geração autônoma, microgrid, sustentabilidade, agroecologia" name="keywords"/>
+<meta content="Instituto Graciliana Maria da Conceição" name="author"/>
+<meta content="index, follow" name="robots"/>
+<!-- 🌐 Open Graph – Compartilhamento social -->
+<meta content="Energia Solar Inteligente – Agroverso" property="og:title"/>
+<meta content="Transforme sol em autonomia regenerativa. Conheça o sistema de energia solar inteligente do Agroverso para propriedades rurais e agrovilas." property="og:description"/>
+<meta content="assets/images/energia-1.jpg" property="og:image"/>
+<meta content="https://agroverso.tec.br/produto-energia.html" property="og:url"/>
+<meta content="website" property="og:type"/>
+<!-- 🖼️ Identidade visual e estrutura de app -->
+<link href="assets/images/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="manifest.json" rel="manifest"/>
+<meta content="#004225" name="theme-color"/>
+<meta content="light dark" name="color-scheme"/>
+<!-- 🎨 Estilos Modulares do Agroverso -->
+<link href="assets/css/base.css" rel="stylesheet"/>
+<link href="assets/css/layout.css" rel="stylesheet"/>
+<link href="assets/css/produtos.css" rel="stylesheet"/>
+<link href="assets/css/carrossel.css" rel="stylesheet"/>
+<link href="assets/css/responsivo.css" rel="stylesheet"/>
+<link href="assets/css/footer.css" rel="stylesheet"/>
 </head>
-
 <body>
-  <!-- ⬆️ Cabeçalho institucional -->
-  <div data-include="partials/header-produto.html"></div>
-
-
-  <!-- ⚡ Conteúdo principal -->
-  <main class="conteudo-produto" role="main" aria-labelledby="titulo-energia">
-    <section>
-      <h2 id="titulo-energia" class="titulo-produto">Energia Solar Inteligente</h2>
-      <p>
-        Autonomia energética conectada à inteligência digital regenerativa.
-      </p>
-    </section>
-
-    <!-- 🎠 Carrossel de imagens com integração total -->
-    <section aria-labelledby="galeria-energia">
-      <h3 id="galeria-energia" class="secao-titulo">Galeria do Sistema</h3>
-      <div class="carrossel-container" aria-label="Galeria de imagens do sistema de energia solar Agroverso" onclick="abrirCarrosselFullscreen(this)">
-        <div class="carrossel transicao" id="carrossel-energia">
-          <img src="assets/images/energia-1.jpg" alt="Sistema Agroverso instalado com painéis solares em campo" />
-          <img src="assets/images/energia-2.jpg" alt="Painel digital Agroverso exibindo dados em tempo real" />
-          <img src="assets/images/energia-3.jpg" alt="Operador configurando o sistema com app de monitoramento" />
-        </div>
-      </div>
-    </section>
-
-    <!-- 🔘 Botão de fechar modo fullscreen -->
-    <button id="fecharFullscreen" onclick="fecharCarrosselFullscreen()" hidden aria-hidden="true">Fechar</button>
-
-    <!-- 🔋 Seção de descrição funcional e aplicada -->
-    <section class="descricao-produto">
-      
-     <p> </p>
-     <p> </p>
-     <p> </p>
-         <h3>Sobre o sistema</h3>
-      <p>
-        O <strong>Sistema de Energia Solar Inteligente Agroverso</strong> oferece geração fotovoltaica de alta performance, integração com sistemas de controle digital e autonomia energética real. Com painéis otimizados, inversores inteligentes e monitoramento em tempo real, o Agroverso coloca o poder do sol nas mãos do produtor regenerativo.
-      </p>
-
-      <h3>Benefícios principais</h3>
-      <ul class="lista-tecnica">
-        <li>⚡ <strong>Monitoramento remoto em tempo real</strong> por aplicativo ou dashboard web</li>
-        <li>🌞 <strong>Geração limpa, silenciosa e contínua</strong> com impacto ambiental positivo</li>
-        <li>📊 Visualização gráfica de geração, consumo e eficiência</li>
-        <li>🌤️ Operação otimizada mesmo em dias nublados ou com baixa irradiação</li>
-        <li>🔋 Compatível com <strong>baterias e micro-redes híbridas</strong> para independência total</li>
-      </ul>
-
-      <h3>Aplicações recomendadas</h3>
-      <p>
-        Recomendado para <strong>propriedades rurais, sítios agroecológicos, estufas, agrovilas, galpões, carports e comunidades regenerativas</strong>. O sistema é modular, expansível e pode operar tanto conectado à rede quanto de forma totalmente isolada.
-      </p>
-
-      <!-- 📲 Botão de orçamento via WhatsApp -->
-      <div class="chamada-final">
-        <h3>Solicite seu orçamento agora mesmo</h3>
-        <p>Atendimento especializado para sua propriedade, comunidade ou iniciativa regenerativa.</p>
-        <a href="https://wa.me/5511963372373?text=Olá! Tenho interesse no sistema de Energia Solar Inteligente do Agroverso e gostaria de um orçamento personalizado."
-           target="_blank"
-           rel="noopener noreferrer"
-           class="botao-acao"
-           aria-label="Solicitar orçamento via WhatsApp com a equipe Agroverso">
+<!-- ⬆️ Cabeçalho institucional -->
+<div data-include="partials/header-produto.html"></div>
+<!-- ⚡ Conteúdo principal -->
+<main aria-labelledby="titulo-energia" class="conteudo-produto" role="main">
+<section>
+<h2 class="titulo-produto" id="titulo-energia">## 🔗 Integração com Tally.xyz</h2>
+<p>### Etapas:</p>
+</section>
+<!-- 🎠 Carrossel de imagens com integração total -->
+<section aria-labelledby="galeria-energia">
+<h3 class="secao-titulo" id="galeria-energia">1. Acesse: https://www.tally.xyz/explore</h3>
+<div aria-label="Galeria de imagens do sistema de energia solar Agroverso" class="carrossel-container" onclick="abrirCarrosselFullscreen(this)">
+<div class="carrossel transicao" id="carrossel-energia">
+<img alt="Sistema Agroverso instalado com painéis solares em campo" src="assets/images/energia-1.jpg"/>
+<img alt="Painel digital Agroverso exibindo dados em tempo real" src="assets/images/energia-2.jpg"/>
+<img alt="Operador configurando o sistema com app de monitoramento" src="assets/images/energia-3.jpg"/>
+</div>
+</div>
+</section>
+<!-- 🔘 Botão de fechar modo fullscreen -->
+<button aria-hidden="true" hidden="" id="fecharFullscreen" onclick="fecharCarrosselFullscreen()">Fechar</button>
+<!-- 🔋 Seção de descrição funcional e aplicada -->
+<section class="descricao-produto">
+<p>2. Clique em **“Submit New DAO”**</p>
+<p>3. Insira:</p>
+<p>- Endereço do `Governor`: `0x...`</p>
+<h3>- Nome da DAO: `URBZ`</h3>
+<p>- Token: `URBZ (ERC20Votes)`</p>
+<h3>- Blockchain: Sepolia ou Mainnet</h3>
+<ul class="lista-tecnica">
+<li>⚡ <strong>Monitoramento remoto em tempo real</strong> por aplicativo ou dashboard web</li>
+<li>🌞 <strong>Geração limpa, silenciosa e contínua</strong> com impacto ambiental positivo</li>
+<li>📊 Visualização gráfica de geração, consumo e eficiência</li>
+<li>🌤️ Operação otimizada mesmo em dias nublados ou com baixa irradiação</li>
+<li>🔋 Compatível com <strong>baterias e micro-redes híbridas</strong> para independência total</li>
+</ul>
+<h3>4. Complete os metadados:</h3>
+<p>- Website: https://urbz.tec.br</p>
+<!-- 📲 Botão de orçamento via WhatsApp -->
+<div class="chamada-final">
+<h3>- GitHub, Twitter, Whitepaper, etc.</h3>
+<p>5. Confirme a verificação com Etherscan + Tally Bot</p>
+<a aria-label="Solicitar orçamento via WhatsApp com a equipe Agroverso" class="botao-acao" href="https://wa.me/5511963372373?text=Olá! Tenho interesse no sistema de Energia Solar Inteligente do Agroverso e gostaria de um orçamento personalizado." rel="noopener noreferrer" target="_blank">
           📲 Solicitar orçamento via WhatsApp
         </a>
-      </div>
-    </section>
-  </main>
-
-  <!-- 🧭 Rodapé Institucional -->
-  <div data-include="footer"></div>
-
-
-  <!-- 🧠 Scripts Essenciais -->
-  <script src="scripts/router-auto.js" defer></script>
-  <script src="scripts/menu-lateral.js" defer></script>
-  <script src="scripts/carrossel.js" defer></script>
-  <script src="scripts/footer-loader.js" defer></script>
-
+</div>
+</section>
+</main>
+<!-- 🧭 Rodapé Institucional -->
+<div data-include="footer"></div>
+<!-- 🧠 Scripts Essenciais -->
+<script defer="" src="scripts/router-auto.js"></script>
+<script defer="" src="scripts/menu-lateral.js"></script>
+<script defer="" src="scripts/carrossel.js"></script>
+<script defer="" src="scripts/footer-loader.js"></script>
 </body>
 </html>
